@@ -20,7 +20,7 @@ class ApiClient {
       ...headers,
     };
 
-    const response: Response = await this.fetch(`/api${endpoint}`, {
+    const response: Response = await fetch(`/api${endpoint}`, {
       method,
       headers: defaultHeaders,
       body: body ? JSON.stringify(body) : undefined,
@@ -42,6 +42,7 @@ class ApiClient {
   }
 
   async createVideo(videoData: VideoFormData) {
+
     return this.fetch<IVideo>("/videos", {
       method: "POST",
       body: videoData,

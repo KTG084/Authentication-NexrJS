@@ -5,7 +5,6 @@ import { IKUploadResponse } from "imagekitio-next/dist/types/components/IKUpload
 import { useState } from "react";
 import { Loader2 } from "lucide-react";
 
-
 interface FileUploadProps {
   onSuccess: (res: IKUploadResponse) => void;
   onProgress?: (progress: number) => void;
