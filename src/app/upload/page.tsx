@@ -1,11 +1,3 @@
-import React from 'react'
+"use client"
 
-const upload = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
-
-export default upload
+export default function VideoUploadPage
